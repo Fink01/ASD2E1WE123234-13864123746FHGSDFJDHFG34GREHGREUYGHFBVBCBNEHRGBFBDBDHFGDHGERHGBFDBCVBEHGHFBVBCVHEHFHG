@@ -1,6 +1,7 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "romanelpro7 , WristSIlt" then
+if player.Name == "romanelpro7" then
+if player.Name == "WristSIlt" then
 print("Whitelisted")
 --Made by Fink
 local DoggoFvcker = Instance.new("ScreenGui")
