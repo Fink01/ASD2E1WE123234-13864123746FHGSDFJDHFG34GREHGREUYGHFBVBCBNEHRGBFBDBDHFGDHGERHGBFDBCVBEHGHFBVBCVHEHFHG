@@ -2,6 +2,102 @@ local player = game.Players.LocalPlayer
 
 if player.Name == "romanelpro7" then
 print("Whitelisted")
+--Made by Fink
+local DoggoFvcker = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local Logintitle = Instance.new("TextLabel")
+local username = Instance.new("TextBox")
+local password = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local DoggoFvcker_2 = Instance.new("Frame")
+local DF = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+
+DoggoFvcker.Name = "Doggo Fvcker"
+DoggoFvcker.Parent = game.CoreGui
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = DoggoFvcker
+LoginFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LoginFrame.Position = UDim2.new(0.375310689, 0, 0.259259254, 0)
+LoginFrame.Size = UDim2.new(0, 320, 0, 402)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+Logintitle.Name = "Login title"
+Logintitle.Parent = LoginFrame
+Logintitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Logintitle.Size = UDim2.new(0, 320, 0, 50)
+Logintitle.Font = Enum.Font.Bangers
+Logintitle.Text = "Login"
+Logintitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.TextScaled = true
+Logintitle.TextSize = 14.000
+Logintitle.TextWrapped = true
+
+username.Name = "username"
+username.Parent = LoginFrame
+username.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+username.Position = UDim2.new(0.1875, 0, 0.191542283, 0)
+username.Size = UDim2.new(0, 200, 0, 50)
+username.Font = Enum.Font.SourceSans
+username.Text = "Username"
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextScaled = true
+username.TextSize = 14.000
+username.TextWrapped = true
+
+password.Name = "password"
+password.Parent = LoginFrame
+password.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+password.Position = UDim2.new(0.1875, 0, 0.393034816, 0)
+password.Size = UDim2.new(0, 200, 0, 50)
+password.Font = Enum.Font.SourceSans
+password.Text = "Password"
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
+
+TextButton.Parent = LoginFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.081249997, 0, 0.584577143, 0)
+TextButton.Size = UDim2.new(0, 270, 0, 84)
+TextButton.Font = Enum.Font.Creepster
+TextButton.Text = "Login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	if username.Text == "ADMINEDUSER" and password.Text == "2500" then
+		LoginFrame.Visible = false
+		DoggoFvcker_2.Visible = true
+	end
+end)
+
+DoggoFvcker_2.Name = "Doggo Fvcker"
+DoggoFvcker_2.Parent = DoggoFvcker
+DoggoFvcker_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoggoFvcker_2.Position = UDim2.new(0, 0, 0.461728394, 0)
+DoggoFvcker_2.Size = UDim2.new(0, 155, 0, 157)
+DoggoFvcker_2.Visible = false
+DoggoFvcker_2.Active = true
+DoggoFvcker_2.Draggable = true
+
+DF.Name = "DF"
+DF.Parent = DoggoFvcker_2
+DF.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DF.Position = UDim2.new(0.141935483, 0, 0.464968145, 0)
+DF.Size = UDim2.new(0, 110, 0, 50)
+DF.Font = Enum.Font.SourceSans
+DF.Text = "Fvcker"
+DF.TextColor3 = Color3.fromRGB(0, 0, 0)
+DF.TextScaled = true
+DF.TextSize = 14.000
+DF.TextWrapped = true
+DF.MouseButton1Down:connect(function()
 
 local ScreenGui = Instance.new("ScreenGui")
 local Open = Instance.new("ImageButton")
@@ -2142,6 +2238,17 @@ local function FIRI_fake_script() -- BdTab.LocalScript
 end
 coroutine.wrap(FIRI_fake_script)()
 
+end)
+
+TextLabel.Parent = DoggoFvcker_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Size = UDim2.new(0, 155, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Doggo"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 else
 player:Kick("not " .. "Whitelisted")
 end
